@@ -1,0 +1,64 @@
+
+  /* Darkmode */
+
+  body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Change the navbar toggler icon in dark mode */
+body.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .form-check-label,
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: #f5f5f5 !important;
+}
+
+.dark-mode section {
+  background-color: #121212;
+}
+
+.dark-mode .btn-dark {
+  background-color: #333;
+  border-color: #444;
+}
+
+
+/* Image floating */
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/* tech-stacks icon */
+.tech-Icon {
+  transition: transform 0.3s ease !important; /* Smooth transition */
+}
+
+.tech-Icon:hover {
+  transform: scale(1.1) !important; /* Enlarges the i con to 110% */
+}
+
+.enlarge {
+    filter: grayscale(10%); 
+  transition: transform 0.3s ease !important;
+}
+.enlarge:hover {
+  transform: scale(1.2) !important;
+      filter: grayscale(0); 
+}
